@@ -20,6 +20,8 @@ namespace EFModelingReferencesApp
         //public string? CompanyTitle { get; set; }
 
         //[ForeignKey("CommandId")]
-        public Company? Company { get; set; } = null!;
+        public virtual Company? Company { get; set; } = null!;
+
+        public virtual Position? Position {  get; set; } 
     }
 }

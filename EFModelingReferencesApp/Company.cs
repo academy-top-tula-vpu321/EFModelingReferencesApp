@@ -11,9 +11,9 @@ namespace EFModelingReferencesApp
         public int Id { get; set; }
         public string Title { get; set; } = null!;
 
-        public int? CountryId { get; set; }
-        public Country? Country { get; set; }
+        //public int? CountryId { get; set; }
+        public virtual Country? Country { get; set; }
 
-        public List<Employee>? Employees { get; set; }
+        public virtual List<Employee>? Employees { get; set; }
     }
 }

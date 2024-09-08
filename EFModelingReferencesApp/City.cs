@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace EFModelingReferencesApp
 {
-    public class Country
+    public class City
     {
         public int Id { get; set; }
         public string Title { get; set; } = null!;
-
-        public virtual List<Company>? Companies { get; set; }
-        public virtual City? Capital { get; set; }
     }
 }
